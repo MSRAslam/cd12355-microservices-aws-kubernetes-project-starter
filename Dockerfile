@@ -7,7 +7,7 @@ RUN apt update -y && apt install -y build-essential libpq-dev
 WORKDIR /app
 
 # Copy code
-COPY . .
+COPY analytics/ .
 
 # Install Python dependencies
 RUN pip install --upgrade pip setuptools wheel
