@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM public.ecr.aws/docker/library/python:3.8-slim
 
 # Install dependencies
 RUN apt update -y && apt install -y build-essential libpq-dev
